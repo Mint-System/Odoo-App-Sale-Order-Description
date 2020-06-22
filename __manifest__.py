@@ -11,7 +11,7 @@
     'author': "Mint System",
     'website': "https://www.mint-system.ch",
     'category': 'Sales',
-    'version': '0.1.0',
+    'version': '0.1.1',
     'depends': ['sale'],
     'data': [
         'views/raw.xml',
