@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="sale_order_description.raw" model="ir.ui.view">
+        <field name="active" eval="True"/>
+        <field name="arch" type="xml">
+            <data>
+                <xpath expr="/t/t/div/table/tbody/t[2]/tr/t[1]/td[1]/span" position="replace">
+                    <span t-raw="line.name"></span>
+                </xpath>
+            </data>
+        </field>
+        <field name="field_parent" eval="False"/>
+        <field name="inherit_id" ref="sale.report_saleorder_document"/>
+        <field name="mode">extension</field>
+        <field name="model" eval="False"/>
+        <field name="name">
+            Sale Order Description: Raw
+        </field>
+        <field name="priority">99</field>
+        <field name="type">qweb</field>
+    </record>
+</odoo>
